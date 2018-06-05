@@ -108,16 +108,19 @@ nav h1 a {
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
   width: 100%;
-  height: 50px;
+  height: 100%;
   background-color: #3397DB;
   align-items: center;
+  padding: 10px 2% 0 2%;
+  display: flex;
+  flex-direction: column;
 }
 .filter-options h2 {
   color: white;
   font-size: 1rem;
   font-weight: normal;
   line-height: 1;
-  margin: 0 20px;
+  margin: 0 0 10px 0;
 }
 .filter-options select {
   background-color: white;
@@ -126,7 +129,7 @@ nav h1 a {
   font-size: 11pt;
   height: 35px;
   letter-spacing: 0;
-  margin: 10px;
+  margin: 0 0 10px 0;
   padding: 0 10px;
   width: 200px;
 }
@@ -274,4 +277,21 @@ nav h1 a {
 }
 #restaurant-hours td {
   color: #666;
+}
+
+/* ====================== Media Queries: 480px; ====================== */
+@media screen and (min-width: 480px) {
+  .filter-options {
+    display: block;
+  }
+  #neighborhoods-select {
+    margin: 0 20px 10px 0;
+  }
+}
+
+/* ====================== Media Queries: 1400px; ====================== */
+@media screen and (min-width: 1400px) {
+  .filter-options {
+    padding: 10px 30px 0 30px;
+  }
 }
