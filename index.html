@@ -13,13 +13,14 @@
     <nav>
       <h1><a href="/">Restaurant Reviews</a></h1>
     </nav>
+    <a href="#filters" class="skip-link">Skip the map</a>
   </header>
 
-  <main id="maincontent">
+  <main id="maincontent" tabindex="-1">
     <section id="map-container">
       <div id="map"></div>
     </section>
-    <section>
+    <section id="filters">
       <div class="filter-options">
         <h2>Filter Results</h2>
         <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
